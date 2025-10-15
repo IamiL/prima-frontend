@@ -3,6 +3,7 @@ import {redirect} from "next/navigation";
 import styles from "./flatDetailContent.module.css";
 import {Facility} from "@/components/facility/facility";
 import {SubmitBlock} from "@/components/submitBlock/submitBlock";
+import {DescriptionBlock} from "./DescriptionBlock";
 
 // Helper function to strip HTML tags from description
 function stripHtml(html) {
@@ -97,15 +98,7 @@ export async function FlatDetailContent({ flatId, start, end, humans }) {
                     <li>{flatInfo.humans} спальных мест</li>
                     <li>Распределение мест: {flatInfo.sleeps_distribution}</li>
                 </ul>
-                <div id={styles.descriptionContainer}>
-                    <h2>
-                        Описание
-                    </h2>
-                    <p>
-                        {flatInfo.description}
-                    </p>
-                    <button>Показать больше</button>
-                </div>
+                <DescriptionBlock description={flatInfo.description} />
                 <div id={styles.servicesContainer}>
                     <h2>Дополнительные услуги и удобства</h2>
                     <ul id={styles.services}>
