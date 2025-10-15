@@ -1,0 +1,9 @@
+#logoSec {
+    height: 60px;
+    /*overflow: hidden;*/
+}
+
+#header{
+    position: fixed;
+    z-index: 1;
+}

@@ -1,0 +1,34 @@
+#descriptionSec {
+    max-width: 1400px;
+}
+
+#heading {
+    font-family: var(--font-melodrama);
+    font-weight: 600;
+    font-size: 240px;
+    line-height: 1;
+    text-align: center;
+    color: var(--bricks-color-oqxabu);
+    text-align: start;
+}
+
+#descriptionBlock {
+    margin-top: 50px;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 300;
+    font-size: 24px;
+    color: var(--bricks-color-oqxabu);
+    font-family: var(--font-manrope);
+}
+
+.descriptionChildBlock {
+    max-width: 45%;
+}
+
+#descriptionParagraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2em;
+}

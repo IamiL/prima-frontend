@@ -1,0 +1,226 @@
+.FlatCart {
+    display: flex;
+    flex-direction: column;
+    width: 349px;
+    height: 531px;
+    gap: 8px;
+}
+
+
+.flat_cart_preview_img {
+    object-fit: cover;
+    min-height: 100%;
+    width: 100%;
+}
+
+.flat_cart_preview {
+    width: 349px;
+    height: 349px;
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.flat_cart_preview_images {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 100%;
+    transition: transform 0.35s cubic-bezier(0.15, 0.3, 0.25, 1);
+}
+
+.flat_cart_info {
+    color: black;
+}
+
+.flat_cart_info > p {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-style: normal;
+    font-stretch: normal;
+}
+
+.flat_cart_info_text {
+
+}
+
+.flat_cart_info_price_value {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: -0.6px;
+    line-height: 34px;
+    color: #002630ff;
+}
+
+.flat_cart_info_price_text, .flat_cart_info_address {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.2px;
+    line-height: 28px;
+    color: #335159ff;
+}
+
+.separator {
+    margin-inline: 8px;
+    color: #cedbe3ff;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.flat_cart_info_specs_list {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 26px;
+    color: #002630ff;
+}
+
+.flat_cart_info_specs_item {
+    white-space: nowrap;
+}
+
+.flat_cart_info_time_to_center {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+    color: #002630ff;
+    word-break: break-word;
+}
+
+.flat_cart_preview > a {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.flat_cart_preview > a:hover + .flat_cart_preview_nadsloyka .btn_change_preview {
+    opacity: 1;
+}
+
+.flat_cart_preview_nadsloyka:hover .btn_change_preview {
+    opacity: 1;
+}
+
+.flat_cart_preview_nadsloyka {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 349px;
+    aspect-ratio: 1/1;
+    top: 0;
+}
+
+.flat_cart_preview_nadsloyka_btns {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.flat_cart_preview_nadsloyka_like {
+    margin-top: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: end;
+}
+
+.btn_like {
+    cursor: pointer;
+    display: grid;
+    border: none;
+    color: rgba(0, 0, 0, 0.54);
+    height: 28px;
+    padding: 2px;
+    position: relative;
+    background-color: transparent;
+    z-index: 1;
+}
+
+.btn_like:hover > svg {
+    transform: scale(0.75);
+}
+
+.btn_like:active > .btn_like_svg_1 {
+    color: rgb(255, 75, 39);
+}
+
+.btn_like::before {
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 40px;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.btn_like > svg {
+    width: 24px;
+    height: 24px;
+    grid-area: 1 / 1;
+    fill: currentColor;
+    transition: transform 0.2s;;
+}
+
+.btn_like_svg_1 {
+    color: rgba(0, 38, 48, 0.3);
+    stroke: #ffffffff;
+}
+
+.btn_like_svg_2 {
+    color: #ffffffff;
+}
+
+.btn_change_preview {
+    opacity: 0;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    color: #ffffffff;
+    background-color: #00000080;
+    border-width: 0;
+    z-index: 1;
+    transition: opacity 400ms cubic-bezier(0, 0, 0, 1);
+}
+
+
+.btn_change_preview > svg {
+    width: 24px;
+    height: 24px;
+}
+
+.flat_cart_preview_nadsloyka_indicators {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8px;
+    gap: 4px;
+    margin-bottom: 16px;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+.flat_cart_preview_nadsloyka_indicators_btn {
+    cursor: pointer;
+    background-color: #ffffffff;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border-width: 0;
+    z-index: 1;
+    transition: opacity 0.35s cubic-bezier(0.15, 0.3, 0.25, 1);
+}

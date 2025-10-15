@@ -1,0 +1,80 @@
+.skeleton {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px;
+    background: white;
+    border-radius: 12px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.imageContainer {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.imagePlaceholder {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 0%,
+        #e0e0e0 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.price {
+    width: 120px;
+    height: 24px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.address {
+    width: 80%;
+    height: 20px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.specs {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.spec {
+    width: 60px;
+    height: 16px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}

@@ -1,0 +1,151 @@
+.skeleton {
+    padding: 24px;
+    max-width: 1200px;
+    margin: 0 auto;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.imagesContainer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    margin-bottom: 24px;
+    height: 500px;
+}
+
+.mainImage {
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 0%,
+        #e0e0e0 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 12px;
+}
+
+.secondaryImages {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+}
+
+.secondaryImage {
+    background: linear-gradient(
+        90deg,
+        #f0f0f0 0%,
+        #e0e0e0 50%,
+        #f0f0f0 100%
+    );
+    background-size: 200% 100%;
+    animation: shimmer 1.5s infinite;
+    border-radius: 8px;
+    aspect-ratio: 4/3;
+}
+
+.locationContainer {
+    height: 48px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.priceContainer {
+    margin-bottom: 24px;
+}
+
+.priceLine {
+    height: 32px;
+    width: 200px;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.descriptionItems {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 32px;
+}
+
+.descriptionItem {
+    height: 20px;
+    width: 60%;
+    background: #f0f0f0;
+    border-radius: 4px;
+}
+
+.descriptionBlock,
+.servicesBlock,
+.rulesBlock {
+    margin-bottom: 32px;
+}
+
+.title {
+    height: 28px;
+    width: 200px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.textLine {
+    height: 16px;
+    background: #f0f0f0;
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+
+.textLine:nth-child(2) {
+    width: 95%;
+}
+
+.textLine:nth-child(3) {
+    width: 90%;
+}
+
+.textLine:nth-child(4) {
+    width: 85%;
+}
+
+.servicesList {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 16px;
+}
+
+.serviceItem {
+    height: 60px;
+    background: #f0f0f0;
+    border-radius: 8px;
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0;
+    }
+    100% {
+        background-position: -200% 0;
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 768px) {
+    .imagesContainer {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .mainImage {
+        height: 300px;
+    }
+}

@@ -1,0 +1,239 @@
+#main {
+    display: flex;
+    justify-content: center;
+}
+
+#container {
+    display: flex;
+    width: 1232px;
+    margin-top: 30px;
+}
+
+#block1 {
+    width: calc(100% / 3 * 2);
+}
+
+#block1 div {
+    width: 100%;
+}
+
+#block2 {
+    width: calc(100% / 3);
+    padding-left: 25px;
+    margin-top: 27px;
+}
+
+#block2 > div {
+    top: 0;
+    position: sticky;
+}
+
+
+#imagesContainer {
+}
+
+#mainImage {
+    /*width: 821px;*/
+    height: 411px;
+}
+
+#mainImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#secondaryImages {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+}
+
+#secondaryImages div {
+    width: 120px;
+    height: 79px;
+}
+
+#secondaryImages div img {
+    width: 100%;
+    height: 100%;
+}
+
+#locationContainer {
+    display: flex;
+    margin-top: 16px;
+    height: 46px;
+    gap: 16px;
+}
+
+#locationContainer button {
+    /*background: #FFFFFF;*/
+    border: none;
+    align-items: center;
+    color: #002630ff;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+}
+
+#locationContainer_text {
+    font-size: 24px;
+    line-height: 34px;
+    background: transparent;
+}
+
+#mapButton {
+    display: flex;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#mapButton span {
+    height: 18px;
+}
+
+#mapButton svg {
+    width: 16px;
+    height: 16px;
+}
+
+#priceContainer {
+    margin-top: 8px;
+    height: 34px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+}
+
+#priceContainer_price {
+    font-size: 24px;
+    line-height: 34px;
+}
+
+#priceContainer_text {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+#descriptionItemsContainer {
+    margin-top: 16px;
+    display: flex;
+    list-style-type: none;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+#descriptionItemsContainer li {
+    border: 1px solid #cedbe3ff;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.875rem;
+    line-height: 1.5;
+    color: #2d4658;
+}
+
+#descriptionContainer {
+    margin-top: 24px;
+}
+
+#descriptionContainer h2, #rulesContainer h2, #servicesContainer h2, #documentsContainer h2, #contractContainer h2, #cancellationContainer h2, #questionsContainer h2 {
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: -0.2px;
+    line-height: 28px;
+    color: #002630ff;
+}
+
+#descriptionContainer p {
+    margin-top: 16px;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+#descriptionContainer button, #servicesContainer button {
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.75;
+    border: none;
+    border-bottom: 1px dashed #002630ff;
+    color: #002630ff;
+}
+
+#servicesContainer {
+    margin-top: 24px;
+}
+
+#services {
+    margin-top: 16px;
+    list-style-type: none;
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#services > li {
+    display: flex;
+    height: 32px;
+    align-items: center;
+    gap: 8px;
+    color: #2d4658;
+    width: 386px;
+}
+
+#services svg {
+    width: 24px;
+    height: 24px;
+}
+
+#rulesContainer {
+    margin-top: 24px;
+}
+
+#rulesContainer ul {
+    list-style-type: none;
+    margin-top: 16px;
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#documentsContainer {
+    margin-top: 32px;
+}
+
+#documentsBlock {
+    margin-top: 16px;
+    padding: 16px;
+    color: rgba(0, 0, 0, 0.87);
+    border-radius: 4px;
+    border: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+#documentsBlock svg {
+    width: 21px;
+    height: 21px;
+    color: rgb(45, 70, 88);
+    fill: rgb(45, 70, 88);
+}
+
+#documentsBlock > div {
+    display: flex;
+    gap: 8px;
+    justify-content: start;
+    margin-top: 16px;
+}
+
+#documentsBlock h3 {
+    color: rgb(45, 70, 88);
+}
+
+#documentsBlock p {
+    color: rgb(86, 106, 121);
+}

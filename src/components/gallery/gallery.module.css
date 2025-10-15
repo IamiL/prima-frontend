@@ -1,0 +1,29 @@
+#descriptionSec {
+    width: 1400px;
+}
+
+#heading {
+    font-family: var(--font-melodrama);
+    font-weight: 600;
+    font-size: 240px;
+    line-height: 1;
+    text-align: center;
+    color: var(--bricks-color-oqxabu);
+    text-align: end;
+}
+
+#gallery {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 50px;
+}
+
+.galleryImgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    aspect-ratio: 3 / 4;
+    border-radius: 25px;
+}

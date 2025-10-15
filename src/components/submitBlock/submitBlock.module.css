@@ -1,0 +1,101 @@
+#submitContainer {
+    color: rgba(0, 0, 0, 0.87);
+    transition: box-shadow 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+}
+
+#submitBlock {
+    padding: 0 24px;
+    padding-top: 16px;
+}
+
+#dates {
+    display: flex;
+    gap: 8px;
+}
+
+#dates label {
+    color: #2d4658;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    font-size: 0.660rem;
+    transform: translate(0, -1.5px) scale(0.75);
+    line-height: 16px;
+    font-weight: 400;
+}
+
+.dates_input {
+    height: 40px;
+    margin-top: 9px;
+    display: flex;
+    border-radius: 4px;
+    padding: 8px 14px;
+    cursor: text;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.23);
+    align-items: center;
+}
+
+.dates_input svg {
+    width: 16px;
+    height: 16px;
+    color: #2d4658;
+}
+
+.dates_input input {
+    max-width: 120px;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 23px;
+    color: rgba(0, 0, 0, 0.87);
+    border: none;
+}
+
+#submitButton {
+    margin-top: 16px;
+    width: 100%;
+    border: none;
+    background-color: #266AFF;
+    padding: 6px 16px;
+    color: #fff;
+    border-radius: 4px;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.75;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#price_info, #cost_info, #prepayment {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Inter', 'Helvetica', 'Arial', 'sans-serif';
+    line-height: 1.5;
+    font-size: 1rem;
+}
+
+#price_info {
+    margin-top: 16px;
+    color: #2d4658;
+    font-weight: normal;
+}
+
+#prepayment {
+    color: #2d4658;
+    font-weight: normal;
+}
+
+#separator {
+    border-width: 0px 0px thin;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.12);
+    margin: 16px 0;
+}
+
+#cost_info {
+    color: rgb(45, 70, 88);
+    font-weight: bold;
+}

@@ -1,0 +1,108 @@
+#results_description {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1517px;
+    margin-top: 16px;
+    height: 46px;
+    align-items: center;
+}
+
+
+#results_description_btns {
+    display: flex;
+    gap: 8px;
+    height: 100%;
+}
+
+#results_description_text {
+    font-size: 14px;
+    font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: 24px;
+}
+
+#results_description_btn_dropdown, #results_description_btn_map {
+    padding: 16px 10px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+#results_description_btn_dropdown {
+    position: relative;
+    border: 0;
+    box-shadow: inset 0 0 0 1px #cedbe3ff;
+}
+
+#results_description_btn_map {
+    border: 2px solid #cedbe3ff;
+    font-size: 14px;
+}
+
+#results_description_btn_map span {
+    height: 16px;
+}
+
+#results_description_btns svg {
+    width: 16px;
+    height: 16px;
+}
+
+#flatsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    width: min(100%, 1517px);
+    margin-top: 16px;
+}
+
+.error {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    text-align: center;
+    gap: 16px;
+}
+
+.error p {
+    font-size: 18px;
+    color: #333;
+    margin: 0;
+}
+
+.error button {
+    padding: 12px 24px;
+    background: #ff385c;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.error button:hover {
+    background: #d50027;
+}
+
+.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 48px 24px;
+    text-align: center;
+}
+
+.empty p {
+    font-size: 18px;
+    color: #666;
+    margin: 0;
+}
